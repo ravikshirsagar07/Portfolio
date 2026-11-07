@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <g transform="translate(12, 17)">
+    <!-- Audio Waveform / Flow lines -->
+    <rect x="0" y="9" width="3" height="8" rx="1.5" fill="#5865F2"/>
+    <rect x="6" y="5" width="3" height="16" rx="1.5" fill="#5865F2"/>
+    <rect x="12" y="1" width="3" height="24" rx="1.5" fill="#7289DA"/>
+    <rect x="18" y="7" width="3" height="12" rx="1.5" fill="#5865F2"/>
+    <rect x="24" y="3" width="3" height="20" rx="1.5" fill="#7289DA"/>
+    <rect x="30" y="10" width="3" height="6" rx="1.5" fill="#5865F2"/>
+  </g>
+  <text x="54" y="36" fill="#FFFFFF" font-family="'Manrope', -apple-system, sans-serif" font-size="15" font-weight="700" letter-spacing="-0.2">Whisperflow</text>
+</svg>

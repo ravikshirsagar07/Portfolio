@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0c12"/>
+      <stop offset="50%" stop-color="#181320"/>
+      <stop offset="100%" stop-color="#0e0c12"/>
+    </linearGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#bgGrad3)"/>
+  
+  <g stroke="#231b2c" stroke-width="1" opacity="0.6">
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="260" y1="0" x2="260" y2="600"/>
+    <line x1="420" y1="0" x2="420" y2="600"/>
+    <line x1="580" y1="0" x2="580" y2="600"/>
+    <line x1="740" y1="0" x2="740" y2="600"/>
+    <line x1="900" y1="0" x2="900" y2="600"/>
+  </g>
+
+  <circle cx="680" cy="240" r="140" fill="#ff5d65" opacity="0.12" filter="url(#glow3)"/>
+
+  <!-- Console Card -->
+  <g transform="translate(100, 70)">
+    <rect width="760" height="460" rx="14" fill="#13101a" stroke="#2b2038" stroke-width="1.5"/>
+    <rect width="760" height="44" rx="14" fill="#1a1524"/>
+    <rect y="30" width="760" height="14" fill="#1a1524"/>
+    <line x1="0" y1="44" x2="760" y2="44" stroke="#2b2038" stroke-width="1"/>
+    
+    <circle cx="28" cy="22" r="5.5" fill="#ff5f56"/>
+    <circle cx="48" cy="22" r="5.5" fill="#ffbd2e"/>
+    <circle cx="68" cy="22" r="5.5" fill="#27c93f"/>
+    <text x="380" y="27" fill="#9d8bb0" font-family="'Manrope', sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="1">sentiment_diagnostic_nlp.py • LIVE STREAM</text>
+    <rect x="635" y="13" width="105" height="20" rx="4" fill="#2d1222" stroke="#70224d" stroke-width="1"/>
+    <text x="687" y="27" fill="#ff72a5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">NLP PIPELINE</text>
+
+    <!-- Top Stats Row -->
+    <g transform="translate(30, 70)">
+      <rect width="210" height="80" rx="8" fill="#191424" stroke="#312542" stroke-width="1"/>
+      <text x="20" y="28" fill="#ff72a5" font-family="monospace" font-size="10">SENTIMENT POLARITY</text>
+      <text x="20" y="55" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="20" font-weight="800">86.4% Pos</text>
+
+      <rect x="245" width="210" height="80" rx="8" fill="#191424" stroke="#ff5d65" stroke-width="1.5"/>
+      <text x="265" y="28" fill="#ff8f70" font-family="monospace" font-size="10">TOPIC CLUSTERING</text>
+      <text x="265" y="55" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="20" font-weight="800">Checkout UX</text>
+
+      <rect x="490" width="210" height="80" rx="8" fill="#191424" stroke="#312542" stroke-width="1"/>
+      <text x="510" y="28" fill="#3dd68c" font-family="monospace" font-size="10">CONVERSATIONAL Q&amp;A</text>
+      <text x="510" y="55" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="20" font-weight="800">Active Agent</text>
+    </g>
+
+    <!-- Interactive Dialogue Box -->
+    <g transform="translate(30, 175)">
+      <rect width="700" height="225" rx="10" fill="#161220" stroke="#2a1f36" stroke-width="1"/>
+      
+      <!-- User message bubble -->
+      <g transform="translate(25, 25)">
+        <rect width="360" height="34" rx="8" fill="#251d33"/>
+        <text x="15" y="22" fill="#e2d8ee" font-family="'Manrope', sans-serif" font-size="12">User: "Why are return ratings spiking this week?"</text>
+      </g>
+
+      <!-- Bot response bubble -->
+      <g transform="translate(70, 75)">
+        <rect width="605" height="75" rx="8" fill="#1c1628" stroke="#ff5d65" stroke-width="1"/>
+        <text x="20" y="28" fill="#ff8f70" font-family="monospace" font-size="11" font-weight="bold">AI Diagnostic Engine:</text>
+        <text x="20" y="48" fill="#d8cfe3" font-family="'Manrope', sans-serif" font-size="12">"68% of negative reviews cite shipping box tears in region West-2.</text>
+        <text x="20" y="66" fill="#a496b8" font-family="'Manrope', sans-serif" font-size="11">Product intactness is rated 4.8/5, but outer parcel packaging has 82% negative sentiment."</text>
+      </g>
+
+      <!-- Stack tags -->
+      <g transform="translate(25, 175)">
+        <rect width="80" height="24" rx="4" fill="#241b30"/>
+        <text x="40" y="16" fill="#bdaecf" font-family="monospace" font-size="10" text-anchor="middle">Python</text>
+
+        <rect x="90" width="80" height="24" rx="4" fill="#241b30"/>
+        <text x="130" y="16" fill="#bdaecf" font-family="monospace" font-size="10" text-anchor="middle">FastAPI</text>
+
+        <rect x="180" width="100" height="24" rx="4" fill="#241b30"/>
+        <text x="230" y="16" fill="#bdaecf" font-family="monospace" font-size="10" text-anchor="middle">Transformers</text>
+
+        <rect x="290" width="80" height="24" rx="4" fill="#241b30"/>
+        <text x="330" y="16" fill="#bdaecf" font-family="monospace" font-size="10" text-anchor="middle">Pydantic</text>
+
+        <rect x="380" width="100" height="24" rx="4" fill="#241b30"/>
+        <text x="430" y="16" fill="#bdaecf" font-family="monospace" font-size="10" text-anchor="middle">Sentiment AI</text>
+      </g>
+    </g>
+
+    <text x="35" y="435" fill="#ff5d65" font-family="monospace" font-size="12">&gt; nlp_engine.interrogate(dataset="app_reviews", timeframe="7d") — Diagnosis ready.</text>
+  </g>
+</svg>

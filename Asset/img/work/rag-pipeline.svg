@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0e14"/>
+      <stop offset="50%" stop-color="#121824"/>
+      <stop offset="100%" stop-color="#0b0e14"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5d65"/>
+      <stop offset="100%" stop-color="#ff7a59"/>
+    </linearGradient>
+    <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#bgGrad2)"/>
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#1a202c" stroke-width="1" opacity="0.6">
+    <line x1="120" y1="0" x2="120" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="480" y1="0" x2="480" y2="600"/>
+    <line x1="660" y1="0" x2="660" y2="600"/>
+    <line x1="840" y1="0" x2="840" y2="600"/>
+    <line x1="0" y1="150" x2="960" y2="150"/>
+    <line x1="0" y1="300" x2="960" y2="300"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+  </g>
+
+  <!-- Glowing orb in center -->
+  <circle cx="480" cy="260" r="150" fill="#ff5d65" opacity="0.1" filter="url(#glow2)"/>
+
+  <!-- Main Architecture Canvas -->
+  <g transform="translate(100, 70)">
+    <rect width="760" height="460" rx="14" fill="#0f141d" stroke="#222b3b" stroke-width="1.5"/>
+    <rect width="760" height="44" rx="14" fill="#141a26"/>
+    <rect y="30" width="760" height="14" fill="#141a26"/>
+    <line x1="0" y1="44" x2="760" y2="44" stroke="#222b3b" stroke-width="1"/>
+    
+    <circle cx="28" cy="22" r="5.5" fill="#ff5f56"/>
+    <circle cx="48" cy="22" r="5.5" fill="#ffbd2e"/>
+    <circle cx="68" cy="22" r="5.5" fill="#27c93f"/>
+    <text x="380" y="27" fill="#8898b0" font-family="'Manrope', sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="1">rag_retrieval_topology.graph • TOP_K=4</text>
+    <rect x="630" y="13" width="110" height="20" rx="4" fill="#122738" stroke="#1f4f72" stroke-width="1"/>
+    <text x="685" y="27" fill="#4fa3e3" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">COSINE SIMILARITY</text>
+
+    <!-- Flow Nodes (3 Column Architecture) -->
+    <g transform="translate(30, 80)">
+      <!-- Ingestion Column -->
+      <rect width="210" height="180" rx="10" fill="#141a25" stroke="#273245" stroke-width="1.2"/>
+      <rect x="15" y="15" width="180" height="26" rx="5" fill="#1a2332"/>
+      <text x="25" y="32" fill="#8fa0bc" font-family="monospace" font-size="10" font-weight="bold">01. INGESTION &amp; SPLIT</text>
+      
+      <text x="25" y="70" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="14" font-weight="700">Multi-Format Parsers</text>
+      <text x="25" y="90" fill="#7a8ba3" font-family="'Manrope', sans-serif" font-size="12">Markdown, PDF, Technical Docs</text>
+      
+      <rect x="20" y="115" width="170" height="45" rx="6" fill="#10151f" stroke="#202938" stroke-width="1"/>
+      <text x="30" y="133" fill="#697a92" font-family="monospace" font-size="10">chunk_size: 512 tokens</text>
+      <text x="30" y="148" fill="#697a92" font-family="monospace" font-size="10">overlap: 50 tokens</text>
+
+      <!-- Arrow 1 -->
+      <path d="M 245 170 L 265 170" stroke="#ff5d65" stroke-width="2" marker-end="url(#arrow)"/>
+
+      <!-- Vector Store Column -->
+      <rect x="245" width="210" height="180" rx="10" fill="#161c28" stroke="#ff5d65" stroke-width="1.5"/>
+      <rect x="260" y="15" width="180" height="26" rx="5" fill="#251a20"/>
+      <text x="270" y="32" fill="#ff8f70" font-family="monospace" font-size="10" font-weight="bold">02. EMBED &amp; INDEX</text>
+      
+      <text x="270" y="70" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="14" font-weight="700">Vector Embeddings</text>
+      <text x="270" y="90" fill="#7a8ba3" font-family="'Manrope', sans-serif" font-size="12">Dense 1536-dim Index</text>
+
+      <rect x="265" y="115" width="170" height="45" rx="6" fill="#10151f" stroke="#2f252a" stroke-width="1"/>
+      <text x="275" y="133" fill="#ff8f70" font-family="monospace" font-size="10">Chroma / Qdrant Storage</text>
+      <text x="275" y="148" fill="#3dd68c" font-family="monospace" font-size="10">dist &lt; 0.16 (grounded)</text>
+
+      <!-- Synthesis Column -->
+      <rect x="490" width="210" height="180" rx="10" fill="#141a25" stroke="#273245" stroke-width="1.2"/>
+      <rect x="505" y="15" width="180" height="26" rx="5" fill="#1a2332"/>
+      <text x="515" y="32" fill="#8fa0bc" font-family="monospace" font-size="10" font-weight="bold">03. GROUNDED SYNTHESIS</text>
+
+      <text x="515" y="70" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="14" font-weight="700">Bounded Context</text>
+      <text x="515" y="90" fill="#7a8ba3" font-family="'Manrope', sans-serif" font-size="12">Prompt injection defense</text>
+
+      <rect x="510" y="115" width="170" height="45" rx="6" fill="#10151f" stroke="#202938" stroke-width="1"/>
+      <text x="520" y="133" fill="#697a92" font-family="monospace" font-size="10">Strict source citations</text>
+      <text x="520" y="148" fill="#3dd68c" font-family="monospace" font-size="10">Zero hallucination mode</text>
+    </g>
+
+    <!-- Bottom summary box -->
+    <g transform="translate(30, 285)">
+      <rect width="700" height="145" rx="10" fill="#121721" stroke="#212a38" stroke-width="1"/>
+      <text x="25" y="32" fill="#ffffff" font-family="'Manrope', sans-serif" font-size="16" font-weight="800">Production-Ready Modular RAG Architecture</text>
+      <text x="25" y="55" fill="#8695ad" font-family="'Manrope', sans-serif" font-size="12">Grounded answers with traceable citations, latency optimization, and strict schema validation.</text>
+
+      <!-- Stack badges -->
+      <g transform="translate(25, 80)">
+        <rect width="80" height="24" rx="4" fill="#1c2331"/>
+        <text x="40" y="16" fill="#b0bed3" font-family="monospace" font-size="10" text-anchor="middle">Python</text>
+
+        <rect x="90" width="100" height="24" rx="4" fill="#1c2331"/>
+        <text x="140" y="16" fill="#b0bed3" font-family="monospace" font-size="10" text-anchor="middle">LangChain</text>
+
+        <rect x="200" width="110" height="24" rx="4" fill="#1c2331"/>
+        <text x="255" y="16" fill="#b0bed3" font-family="monospace" font-size="10" text-anchor="middle">Vector Database</text>
+
+        <rect x="320" width="90" height="24" rx="4" fill="#1c2331"/>
+        <text x="365" y="16" fill="#b0bed3" font-family="monospace" font-size="10" text-anchor="middle">OpenAI</text>
+
+        <rect x="420" width="90" height="24" rx="4" fill="#1c2331"/>
+        <text x="465" y="16" fill="#b0bed3" font-family="monospace" font-size="10" text-anchor="middle">FastAPI</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <g transform="translate(15, 15)">
+    <circle cx="15" cy="15" r="14" stroke="#10A37F" stroke-width="2.5" fill="none"/>
+    <path d="M15 7V23M7 15H23M9.5 9.5L20.5 20.5M20.5 9.5L9.5 20.5" stroke="#10A37F" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="56" y="37" fill="#FFFFFF" font-family="'Manrope', -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.3">ChatGPT</text>
+</svg>

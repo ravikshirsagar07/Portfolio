@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="960" height="600">
+  <defs>
+    <linearGradient id="bgG_Simp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d12"/>
+      <stop offset="50%" stop-color="#141722"/>
+      <stop offset="100%" stop-color="#0c0d12"/>
+    </linearGradient>
+    <filter id="glow_Simp" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="600" fill="url(#bgG_Simp)"/>
+
+  <!-- Technical Grid -->
+  <g stroke="#1a1e2b" stroke-width="1" opacity="0.5">
+    <line x1="80" y1="0" x2="80" y2="600"/><line x1="240" y1="0" x2="240" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/><line x1="560" y1="0" x2="560" y2="600"/>
+    <line x1="720" y1="0" x2="720" y2="600"/><line x1="880" y1="0" x2="880" y2="600"/>
+    <line x1="0" y1="120" x2="960" y2="120"/><line x1="0" y1="240" x2="960" y2="240"/>
+    <line x1="0" y1="360" x2="960" y2="360"/><line x1="0" y1="480" x2="960" y2="480"/>
+  </g>
+
+  <!-- Ambient Glow -->
+  <circle cx="700" cy="240" r="140" fill="#ff8f70" opacity="0.12" filter="url(#glow_Simp)"/>
+
+  <!-- Console Container -->
+  <g transform="translate(90, 60)">
+    <rect width="780" height="470" rx="14" fill="#10131b" stroke="#222838" stroke-width="1.5"/>
+    <rect width="780" height="44" rx="14" fill="#151924"/>
+    <rect y="30" width="780" height="14" fill="#151924"/>
+    <line x1="0" y1="44" x2="780" y2="44" stroke="#222838" stroke-width="1"/>
+
+    <!-- Window buttons -->
+    <circle cx="28" cy="22" r="5.5" fill="#ff5f56"/>
+    <circle cx="48" cy="22" r="5.5" fill="#ffbd2e"/>
+    <circle cx="68" cy="22" r="5.5" fill="#27c93f"/>
+
+    <text x="390" y="27" fill="#8b97ac" font-family="'Consolas', monospace" font-size="12" font-weight="bold" text-anchor="middle">simple_ai_travel_agent.py</text>
+    
+    <rect x="630" y="12" width="125" height="22" rx="4" fill="#15241d" stroke="#256b46" stroke-width="1"/>
+    <text x="692" y="27" fill="#3dd68c" font-family="'Consolas', monospace" font-size="10" font-weight="bold" text-anchor="middle">STATUS: ACTIVE PLANNER</text>
+
+    <!-- Header info -->
+    <g transform="translate(30, 75)">
+      <text x="0" y="24" fill="#ffffff" font-family="'Arial', sans-serif" font-size="20" font-weight="bold">Simple AI Travel Agent</text>
+      <text x="0" y="50" fill="#7d8b9f" font-family="'Arial', sans-serif" font-size="13">AI-powered multi-stage travel planning, itinerary synthesis, and smart recommendations.</text>
+
+      <!-- Tags row -->
+      <g transform="translate(0, 70)">
+        
+        <rect x="25" width="78" height="26" rx="5" fill="#181c28" stroke="#252b3d" stroke-width="1"/>
+        <text x="64" y="17" fill="#b9c6dc" font-family="'Consolas', monospace" font-size="11" text-anchor="middle">Python</text>
+        
+        <rect x="115" width="60" height="26" rx="5" fill="#181c28" stroke="#252b3d" stroke-width="1"/>
+        <text x="145" y="17" fill="#b9c6dc" font-family="'Consolas', monospace" font-size="11" text-anchor="middle">LLMs</text>
+        
+        <rect x="187" width="105" height="26" rx="5" fill="#181c28" stroke="#252b3d" stroke-width="1"/>
+        <text x="239" y="17" fill="#b9c6dc" font-family="'Consolas', monospace" font-size="11" text-anchor="middle">AI Agents</text>
+        
+        <rect x="304" width="141" height="26" rx="5" fill="#181c28" stroke="#252b3d" stroke-width="1"/>
+        <text x="374" y="17" fill="#b9c6dc" font-family="'Consolas', monospace" font-size="11" text-anchor="middle">State Machine</text>
+        
+      </g>
+
+      <!-- Terminal display area -->
+      <g transform="translate(0, 115)">
+        <rect width="720" height="210" rx="8" fill="#090b10" stroke="#1d2230" stroke-width="1"/>
+        <g transform="translate(20, 20)">
+          <text x="25" y="22" fill="#94a2b8" font-family="'Consolas', monospace" font-size="11">> [INPUT] User preference: 5-day cultural trip to Kyoto, budget: moderate...</text><text x="25" y="42" fill="#94a2b8" font-family="'Consolas', monospace" font-size="11">> [AGENT: PLANNER] Decomposing into Day-by-Day schedule with geographic clustering...</text><text x="25" y="62" fill="#94a2b8" font-family="'Consolas', monospace" font-size="11">> [AGENT: RECOMMENDER] Synthesizing lodging, transit & transit timing constraints...</text><text x="25" y="82" fill="#94a2b8" font-family="'Consolas', monospace" font-size="11">> [OUTPUT] Generated structured Markdown travel itinerary with map coordinates.</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom prompt -->
+    <text x="35" y="445" fill="#ff8f70" font-family="'Consolas', monospace" font-size="12">&gt; pipeline.run() — Status: OK (0.04s) // Trace verified.</text>
+  </g>
+</svg>

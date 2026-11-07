@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <defs>
+    <linearGradient id="gammaG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5D9E"/>
+      <stop offset="100%" stop-color="#8F5FE8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(16, 16)">
+    <!-- Gamma geometric folded triangle icon -->
+    <polygon points="14 0 28 24 0 24" fill="url(#gammaG)"/>
+    <circle cx="14" cy="15" r="4" fill="#090909"/>
+  </g>
+  <text x="56" y="37" fill="#FFFFFF" font-family="'Manrope', -apple-system, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.3">Gamma</text>
+</svg>

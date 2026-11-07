@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <text x="32" y="35" fill="#FFFFFF" font-family="'Arial Black', sans-serif" font-size="26" font-weight="900" letter-spacing="1">aws</text>
+  <!-- Smile arrow -->
+  <path d="M28 42C48 52 82 52 102 42" stroke="#FF9900" stroke-width="3.5" stroke-linecap="round"/>
+  <polygon points="98 38 107 41 101 47" fill="#FF9900"/>
+</svg>

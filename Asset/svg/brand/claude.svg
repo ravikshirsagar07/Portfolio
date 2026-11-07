@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <g transform="translate(18, 14)">
+    <!-- Anthropic / Claude terracotta geometric star/spark -->
+    <path d="M16 0L19.5 10.5L30 14L19.5 17.5L16 28L12.5 17.5L2 14L12.5 10.5L16 0Z" fill="#D97757"/>
+    <path d="M26 4L27.5 9L32 10.5L27.5 12L26 17L24.5 12L20 10.5L24.5 9L26 4Z" fill="#E89B82"/>
+  </g>
+  <text x="58" y="38" fill="#F4EDE6" font-family="'Manrope', -apple-system, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.5">Claude</text>
+</svg>

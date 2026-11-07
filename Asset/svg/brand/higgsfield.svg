@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <g transform="translate(12, 17)">
+    <circle cx="14" cy="13" r="12" stroke="#FF4D6D" stroke-width="2.5" fill="none"/>
+    <circle cx="14" cy="13" r="5" fill="#FF4D6D"/>
+    <line x1="14" y1="1" x2="14" y2="25" stroke="#FF4D6D" stroke-width="1.5" stroke-dasharray="2 2"/>
+    <line x1="2" y1="13" x2="26" y2="13" stroke="#FF4D6D" stroke-width="1.5" stroke-dasharray="2 2"/>
+  </g>
+  <text x="50" y="36" fill="#FFFFFF" font-family="'Manrope', -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="-0.3">Higgsfield</text>
+</svg>

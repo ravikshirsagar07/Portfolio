@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60" width="150" height="60" fill="none">
+  <g transform="translate(15, 16)">
+    <polygon points="14 0 28 8 28 24 14 32 0 24 0 8" fill="#00C7B7" opacity="0.2"/>
+    <path d="M14 0L28 8L14 16L0 8L14 0Z" fill="#00C7B7"/>
+    <path d="M0 8L14 16V32L0 24V8Z" fill="#00AD9F"/>
+    <path d="M28 8L14 16V32L28 24V8Z" fill="#00E5D4"/>
+  </g>
+  <text x="56" y="37" fill="#FFFFFF" font-family="'Manrope', -apple-system, sans-serif" font-size="19" font-weight="700" letter-spacing="-0.3">Netlify</text>
+</svg>
