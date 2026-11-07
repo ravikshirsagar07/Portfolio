@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ravi-kshirsagar.netlify.app/sitemap.xml
